@@ -51,7 +51,6 @@
         "Obj/": true,
         "Logs/": true,
         "logs/": true,
-        "ProjectSettings/": true,
         "UserSettings/": true,
         "temp/": true,
         "Temp/": true
@@ -67,5 +66,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "path to spring.slnx"
+    "dotnet.defaultSolution": "path-to-spring.slnx"
 }
