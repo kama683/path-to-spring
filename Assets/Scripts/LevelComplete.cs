@@ -32,6 +32,8 @@ public class LevelComplete : MonoBehaviour
         // Останавливаем время — персонажи замирают
         Time.timeScale = 0f;
 
+        GetComponent<WinEffect>().PlayWinEffect();
+
         Debug.Log("Level Complete!");
     }
 
