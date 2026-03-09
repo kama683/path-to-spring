@@ -6,11 +6,7 @@ TagManager:
   tags:
   - Ground
   - Bloom
-<<<<<<< HEAD
-  - Dew
-=======
   - Thaw
->>>>>>> main
   layers:
   - Default
   - TransparentFX
