@@ -820,7 +820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Next Level \n"
+  m_text: Back To Map
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7050,6 +7050,7 @@ MonoBehaviour:
   bloomDoor: {fileID: 2009033423}
   dewDoor: {fileID: 429726431}
   winScreen: {fileID: 766409018}
+  currentLevelNumber: 1
 --- !u!4 &1383232351
 Transform:
   m_ObjectHideFlags: 0
@@ -13017,7 +13018,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1383232350}
         m_TargetAssemblyTypeName: LevelComplete, Assembly-CSharp
-        m_MethodName: NextLevel
+        m_MethodName: ReturnToLevelMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

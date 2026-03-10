@@ -5,16 +5,14 @@ public class LevelComplete : MonoBehaviour
 {
     public Door bloomDoor;
     public Door dewDoor;
-
-    // Ссылка на UI-объект экрана победы
     public GameObject winScreen;
 
-    // Флаг чтобы победа не срабатывала каждый кадр
+    public int currentLevelNumber = 1;
+
     private bool levelFinished = false;
 
     void Update()
     {
-        // Если уже победили — больше не проверяем
         if (levelFinished) return;
 
         if (bloomDoor.isPlayerInside && dewDoor.isPlayerInside)
@@ -26,10 +24,7 @@ public class LevelComplete : MonoBehaviour
 
     void WinLevel()
     {
-        // Показываем экран победы
         winScreen.SetActive(true);
-
-        // Останавливаем время — персонажи замирают
         Time.timeScale = 0f;
 
         GetComponent<WinEffect>().PlayWinEffect();
@@ -37,23 +32,23 @@ public class LevelComplete : MonoBehaviour
         Debug.Log("Level Complete!");
     }
 
-    // Эта функция будет вызываться кнопкой Next Level
-    public void NextLevel()
+    public void ReturnToLevelMap()
     {
-        // Возвращаем время
+        int completedLevel = PlayerPrefs.GetInt("CompletedLevel", 0);
+        if (currentLevelNumber > completedLevel)
+        {
+            PlayerPrefs.SetInt("CompletedLevel", currentLevelNumber);
+        }
+
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        if (currentLevelNumber + 1 > unlockedLevel)
+        {
+            PlayerPrefs.SetInt("UnlockedLevel", currentLevelNumber + 1);
+        }
+
+        PlayerPrefs.Save();
+
         Time.timeScale = 1f;
-
-        // Загружаем следующую сцену
-        int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-
-        // Если следующей сцены нет — возвращаемся в меню (сцена 0)
-        if (nextScene >= SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(0);
-        }
-        else
-        {
-            SceneManager.LoadScene(nextScene);
-        }
+        SceneManager.LoadScene("LevelMap");
     }
 }
