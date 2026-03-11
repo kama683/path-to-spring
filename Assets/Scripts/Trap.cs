@@ -3,19 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class Trap : MonoBehaviour
 {
-    public string killerTag;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(killerTag))
+        if (collision.CompareTag("Bloom") || collision.CompareTag("Dew"))
         {
-            // Сначала возвращаем время — на случай если было 0
             Time.timeScale = 1f;
-
-            // Перезапускаем сцену
-            SceneManager.LoadScene(
-                SceneManager.GetActiveScene().buildIndex
-            );
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

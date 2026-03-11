@@ -27,7 +27,7 @@ public class LevelMapManager : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         UpdateLevelMap();
     }
 

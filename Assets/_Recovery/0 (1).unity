@@ -1134,6 +1134,11 @@ MonoBehaviour:
   path2: {fileID: 277120202}
   path3Left: {fileID: 2065192317}
   path4Right: {fileID: 1929232103}
+  lockedFlowerSprite: {fileID: 0}
+  unlockedFlowerSprite: {fileID: 0}
+  completedFlowerSprite: {fileID: 0}
+  lockedVineSprite: {fileID: 0}
+  unlockedVineSprite: {fileID: 0}
   lockedColor: {r: 0.18, g: 0.24, b: 0.18, a: 1}
   unlockedColor: {r: 0.3, g: 0.69, b: 0.31, a: 1}
   completedColor: {r: 0.72, g: 0.83, b: 0.42, a: 1}
@@ -1485,7 +1490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8473395885961802802, guid: dce0b45bcf590774bb5233b86011766b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
