@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: be5ccb48515ae2a4cad0c880b058500a
+guid: 6254683e22915594fa5119c31947c016
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -811850554563380565
-    second: Dude_Monster_0
+      213: -6924875314290094642
+    second: "main_\u043A\u0430\u043C\u0435\u043D\u044C_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dude_Monster_0
+      name: "main_\u043A\u0430\u043C\u0435\u043D\u044C_0"
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 26
-        height: 27
+        x: 262
+        y: 183
+        width: 100
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 22, y: 0, z: 78, w: 106}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baabb84d83abbb4f0800000000000000
-      internalID: -811850554563380565
+      spriteID: ecd0ed95796e5ef90800000000000000
+      internalID: -6924875314290094642
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4e479c0c2bfa1b34f9ffdfff41fbcdc0
+    spriteID: b868ae69b809bc141adf612c8fd22467
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dude_Monster_0: -811850554563380565
+      "main_\u043A\u0430\u043C\u0435\u043D\u044C_0": -6924875314290094642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

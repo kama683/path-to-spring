@@ -548,10 +548,10 @@ TextureImporter:
       name: WolfDeath1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 19
         y: 72
-        width: 40
-        height: 24
+        width: 30
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,8 +618,8 @@ TextureImporter:
         y: 72
         width: 40
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 4.188722, y: 5.6269245}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
