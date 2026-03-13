@@ -14247,6 +14247,7 @@ MonoBehaviour:
   bloomDoor: {fileID: 369323934}
   dewDoor: {fileID: 314542125}
   winScreen: {fileID: 766409018}
+  levelMusic: {fileID: 965879744}
   currentLevelNumber: 2
 --- !u!4 &517594172
 Transform:
@@ -14623,7 +14624,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 584148509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14659,7 +14660,7 @@ GameObject:
   - component: {fileID: 622010183}
   - component: {fileID: 622010182}
   - component: {fileID: 622010181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bloom
   m_TagString: Bloom
   m_Icon: {fileID: 0}
@@ -15804,6 +15805,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1001 &965879743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7789304404067560746, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.74302
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.96051
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151186426421813734, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+--- !u!114 &965879744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5867086868385738545, guid: 4f359efbc422c374db3b62a9121c925a, type: 3}
+  m_PrefabInstance: {fileID: 965879743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d03bc55a3f777747ada7392a28dfb4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelMusic
 --- !u!1 &973350245
 GameObject:
   m_ObjectHideFlags: 0
@@ -22554,7 +22623,7 @@ GameObject:
   - component: {fileID: 1332138884}
   - component: {fileID: 1332138883}
   - component: {fileID: 1332138882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thaw
   m_TagString: Thaw
   m_Icon: {fileID: 0}
@@ -24710,7 +24779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919202280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25420,3 +25489,4 @@ SceneRoots:
   - {fileID: 531815933}
   - {fileID: 836342103}
   - {fileID: 1346264164}
+  - {fileID: 965879743}

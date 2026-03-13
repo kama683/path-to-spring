@@ -6,6 +6,7 @@ public class LevelComplete : MonoBehaviour
     public Door bloomDoor;
     public Door dewDoor;
     public GameObject winScreen;
+    public LevelMusic levelMusic;
 
     public int currentLevelNumber = 1;
 
@@ -24,16 +25,30 @@ public class LevelComplete : MonoBehaviour
 
     void WinLevel()
     {
+        if (levelMusic != null)
+        {
+            levelMusic.StopMusic();
+        }
+
         winScreen.SetActive(true);
         Time.timeScale = 0f;
 
-        GetComponent<WinEffect>().PlayWinEffect();
+        WinEffect effect = GetComponent<WinEffect>();
+        if (effect != null)
+        {
+            effect.PlayWinEffect();
+        }
 
         Debug.Log("Level Complete!");
     }
 
     public void ReturnToLevelMap()
     {
+        if (levelMusic != null)
+        {
+            levelMusic.StopMusic();
+        }
+
         int completedLevel = PlayerPrefs.GetInt("CompletedLevel", 0);
         if (currentLevelNumber > completedLevel)
         {
